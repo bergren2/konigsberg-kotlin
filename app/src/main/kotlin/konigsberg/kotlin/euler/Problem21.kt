@@ -15,8 +15,9 @@ class Problem21(private val limit: Int) {
         // find the amicable numbers
         // ignore perfect numbers like 6 and 28
         sums.keys.forEach { num1 ->
-            val num2 = sums[num1] ?: 2 // dummy default
-            if (sums[num2] == num1 && num1 != num2) {
+            val num2 = sums[num1]
+
+            if (num2 != null && sums[num2] == num1 && num1 != num2) {
                 amicableNumbers.addAll(setOf(num1, num2))
             }
         }
