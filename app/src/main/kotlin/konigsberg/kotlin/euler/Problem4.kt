@@ -1,5 +1,6 @@
 package konigsberg.kotlin.euler
 
+import HelperMethods.isPalindrome
 import java.math.BigInteger
 
 class Problem4(private val numberOfDigits: Int) {
@@ -18,19 +19,5 @@ class Problem4(private val numberOfDigits: Int) {
         }
 
         return largest
-    }
-
-    fun isPalindrome(number: Int): Boolean {
-        val numberString = number.toString()
-
-        val lastIndex = numberString.length - 1
-        val limit = lastIndex / 2
-        for (i in 0..limit) {
-            if (numberString[i] != numberString[lastIndex - i]) {
-                return false
-            }
-        }
-
-        return true
     }
 }
