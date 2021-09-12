@@ -1,6 +1,6 @@
 package konigsberg.kotlin.euler
 
-import kotlin.test.Test
+import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
 class Problem3Tests {
