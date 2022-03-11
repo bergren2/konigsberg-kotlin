@@ -14,6 +14,7 @@ jobs:
         with:
           distribution: adopt-hotspot
           java-version: 11.0.11
+      - run: gradle wrapper
 
       - name: Compile
         run: ./gradlew install
