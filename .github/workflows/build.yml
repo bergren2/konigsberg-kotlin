@@ -16,7 +16,7 @@ jobs:
           java-version: 11.0.11
 
       - name: Compile
-        run: gradle install
+        run: ./gradlew install
 
       - name: Run tests
-        run: gradle clean test --stacktrace
+        run: ./gradlew clean test --stacktrace
