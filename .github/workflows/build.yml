@@ -14,10 +14,14 @@ jobs:
         with:
           distribution: adopt-hotspot
           java-version: 11.0.11
-      - run: gradle wrapper
-
-      - name: Compile
-        run: ./gradlew install
 
       - name: Run tests
-        run: ./gradlew clean test --stacktrace
+        uses: burrunan/gradle-cache-action@v1
+        with:
+          arguments: --parallel clean test --stacktrace
+          gradle-dependencies-cache-key: |
+            **/*.gradle.kts
+            **/gradle.properties
+          properties: |
+            kotlin.parallel.tasks.in.project=true
+          concurrent: true
