@@ -1,7 +1,7 @@
 import HelperMethods.areAmicableNumbers
 import HelperMethods.isPalindrome
 import HelperMethods.properDivisorsOf
-import org.junit.jupiter.api.Test
+import org.junit.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
