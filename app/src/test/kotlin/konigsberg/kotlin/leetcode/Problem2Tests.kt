@@ -1,7 +1,7 @@
 package konigsberg.kotlin.leetcode
 
-import org.junit.jupiter.api.Assertions.assertArrayEquals
-import org.junit.jupiter.api.Test
+import org.junit.Assert.assertArrayEquals
+import org.junit.Test
 
 class Problem2Tests {
     @Test

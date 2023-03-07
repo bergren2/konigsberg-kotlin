@@ -10,5 +10,6 @@ $ sdk install gradle
 ## Development
 
 ```shell
-$ gradle test
+$ ./gradlew build
+$ ./gradlew test
 ```
